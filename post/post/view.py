@@ -2,7 +2,7 @@ from django.http import HttpResponse
 import json
  
  
-# 定义功能
+# 定义功能,字符串拼接
 def add_args(a, b):
     return a+b
  
@@ -17,8 +17,14 @@ def post(request):
             # 判断参数中是否含有a和b
             if a and b:
                 res = add_args(a, b)
+                print(res)
+                print(type(res))
                 dic['number'] = res
+                print(type(dic))
+                print(dic)
                 dic = json.dumps(dic)
+
+                print(dic)
                 return HttpResponse(dic)
             else:
                 return HttpResponse('输入错误')
