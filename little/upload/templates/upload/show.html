@@ -1,0 +1,13 @@
+
+{% csrf_token %}
+
+
+{% for item,value in request.POST.items %}
+	<p>{{ item }}:{{ value}}</p>
+{% endfor %}
+
+
+
+{% for item,value in info_dict.items %}
+	<p>{{ item }}:{{ value}}</p>
+{% endfor %}

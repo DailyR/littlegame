@@ -1,0 +1,5 @@
+INSERT INTO user 
+          (host, user, password, 
+           select_priv, insert_priv, update_priv) 
+           VALUES ('localhost', 'guest', 
+           MD5('guest123'), 'Y', 'Y', 'Y');
