@@ -3,6 +3,96 @@
 {% block content %}
     {% if request.session.is_login %}
     <h1>你好,{{ request.session.user_name }}！欢迎回来！</h1>
+
+
+
+
+                    
+                    <div class="device-name">
+        
+                    </div>
+                    <dl>
+                        <dt>         
+                            
+                                              <div class="panel-body">
+                      <div class="adv-table editable-table ">
+                          <div class="clearfix">
+
+                                                      <table class="table table-striped table-hover table-bordered" id="editable-sample">
+                              <thead>
+                              <tr>
+                                  <th>Username</th>
+                                  <th>Full Name</th>
+                                  <th>Points</th>
+                                  <th>Notes</th>
+                                  <th>Edit</th>
+                                  <th>Delete</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <tr class="">
+                                  <td> 
+                                  	<div class="text">
+                            
+                                小米 MIX 2                     
+                        </div>   
+                         <div class="btn-group">
+                                
+                                    <img  src="https://inside.testin.cn/cfgfiles/images/model/1547014417680/21328595af8c483aa1b1f22879fbd584.jpg">
+                                                         
+                                <p>品牌：小米</p>
+                                <p>型号：MIX 2</p>
+                                <p>系统：Android
+                                        8.0.0</p>
+                                <p>分辨率：2160*1080</p>
+                                
+                                <p id="865736035251969" style="color: red;"></p>
+                            </div></td>
+
+                        <td>
+                                  	<div class="device-name"><div class="text">
+                                    小米 MIX 2
+                                    </div></div>
+         
+                            <div class="device-info">
+                                    <img onerror="javascript:this.src='/skin_v3/static/images/phone_default.jpg'" src="https://inside.testin.cn/cfgfiles/images/model/1547014417680/21328595af8c483aa1b1f22879fbd584.jpg">
+                                <p>品牌：小米</p>
+                                <p>型号：MIX 2</p>
+                                <p>系统：Android
+                                        8.0.0</p>
+                                <p>分辨率：2160*1080</p>
+                                <p id="865736035570129" style="color: red;"></p>
+                            </div>
+                        </td>
+                                  <td>1234</td>
+                                  <td class="center">super user</td>
+                                  <td><a class="edit" href="javascript:;">Edit</a></td>
+                                  <td><a class="delete" href="javascript:;">Delete</a></td>
+                              </tr>
+                        </dt>
+                        <dd>
+
+                        </dd>
+                    </dl>
+                    
+            
+  <!--right slidebar-->
+  <script src="js/slidebars.min.js"></script>
+
+    <!--common script for all pages-->
+    <script src="js/common-scripts.js"></script>
+
+      <!--script for this page only-->
+      <script src="js/editable-table.js"></script>
+
+      <!-- END JAVASCRIPTS -->
+      <script>
+          jQuery(document).ready(function() {
+              EditableTable.init();
+          });
+      </script>
+
+
     {% else %}
     <h1>你尚未登录，只能访问公开内容！</h1>
     {% endif %}

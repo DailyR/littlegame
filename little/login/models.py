@@ -23,3 +23,17 @@ class User(models.Model):
         verbose_name = '用户'
         verbose_name_plural = '用户'
 
+
+class phone(models.Model):
+    '''手机表'''
+    phone_name = models.CharField(max_length=128)
+    cpu = models.EmailField(unique=False)
+    c_time = models.DateTimeField(auto_now_add=True)
+ 
+    def __str__(self):
+        return self.name
+ 
+    class Meta:
+        ordering = ['c_time']
+        verbose_name = '手机'
+        verbose_name_plural = '手机们'
