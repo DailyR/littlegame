@@ -1,4 +1,4 @@
-Django==2.2.24
+Django==2.2.27
 django-jet==1.0.7
 django-summernote==0.8.8.6
 pytz==2018.4
